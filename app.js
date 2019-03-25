@@ -44,6 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+
 //Initiallize passport
 app.use(passport.initialize());
 app.use(cors());

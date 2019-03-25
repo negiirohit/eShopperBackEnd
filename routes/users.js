@@ -13,7 +13,8 @@ router.get('/', function(req, res, next) {
 //In v2 we need to work on signup with different informations
 //User. register : method provided by passportlocal mongoose
 router.post('/signup', (req,res,next) => {
-    User.register(new User({email: req.body.email, name:req.body.name}),req.body.password, (err, user) =>{
+    console.log(req.body);
+    User.register(new User({username: req.body.username, name:req.body.name}),req.body.password, (err, user) =>{
       if(err) {
         console.log(err);
         res.statusCode = 500;

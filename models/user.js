@@ -33,4 +33,4 @@ User.plugin(passportLocalMongoose);
 // if not using passportLocalMongoose
 
 
-module.exports = mongoose.model('User',User);
+module.exports = mongoose.model('ESUser',User);
